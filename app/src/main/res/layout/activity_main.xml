@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="French Teacher App"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <Button
+        android:id="@+id/button_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="1dp"
+        android:text="Green"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/button_purple"
+        app:layout_constraintStart_toStartOf="@+id/button_black"
+        app:layout_constraintTop_toBottomOf="@+id/button_black" />
+
+    <Button
+        android:id="@+id/button_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purple"
+        android:textColor="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/button_red"
+        app:layout_constraintStart_toStartOf="@+id/button_green"
+        app:layout_constraintTop_toBottomOf="@+id/button_green" />
+
+    <Button
+        android:id="@+id/button_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="12dp"
+        android:text="Red"
+        android:textColor="#FB0000"
+        app:layout_constraintBottom_toTopOf="@+id/button_yellow"
+        app:layout_constraintEnd_toEndOf="@+id/button_purple"
+        app:layout_constraintTop_toBottomOf="@+id/button_purple" />
+
+    <Button
+        android:id="@+id/button_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="18dp"
+        android:text="Yellow"
+        android:textColor="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_red"
+        app:layout_constraintTop_toBottomOf="@+id/button_red" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
